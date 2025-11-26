@@ -84,9 +84,13 @@ ________________________________________
 👩‍💻 Author
 
 [Rabi Barnrd M]
+
 [Data analyst]
+
 🌐 GitHub: [https://github.com/rabibarnard7-gif]
+
 💼 LinkedIn: []
+
 📧mail: [rabibarnard6@gmail.com]
 
 📚 Tags
