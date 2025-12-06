@@ -1,101 +1,232 @@
-________________________________________
-⚡️ Coal Stock Monitoring & Power Plant Performance Analysis-FY 2024-25 🏭
+📊 Indian Coal Stock Monitoring & Plant Performance Analysis (FY 2024–25)
 
-Tools: 📊 Dashboard Analysis | 📈 Data Interpretation | 🔬 Power Sector Metrics
+A full Power BI analytics project designed to monitor India’s coal availability, transportation efficiency, and thermal power plant performance using real-time data.
 
-A detailed analysis of two key operational dashboards for Indian thermal power plants: Coal Stock Monitoring and Supply and Plant Performance Analysis, covering the fiscal year 2024-2025 (April 1, 2024, to March 3, 2025).
+📘 1. Project Overview & Objective
 
-📌 Project Overview
-This dashboard analysis provides a consolidated view of the power sector's operational health, critical for ensuring stable electricity generation. The project aims to help stakeholders understand:
-•	Logistics & Supply: 🚂 Performance of transportation modes (Sea, Rail, Road) and Pithead power plants.
-•	Inventory Health: 📦 Total requirement, receipts, shortages, and average stock days across different sectors and states.
-•	Plant Efficiency: 🎯 Monthly and sector-wise Plant Load Factor (PLF), highlighting the performance differential between Critical and Subcritical units.
-________________________________________
+This project focuses on analysing India’s coal stock, indigenous/imported coal availability, supply chain efficiency, capacity distribution, and plant performance for FY 2024–25.
+An interactive Power BI Dashboard was developed to support government planners, energy analysts, and utilities in data-driven decision-making.
 
-❓ Problem Statement
-The Indian power sector faces challenges in maintaining optimal coal inventory and high plant efficiency. We need a unified analytical view to address:
-•	Supply Chain Gaps: Quantifying the efficiency of coal logistics and identifying shortages.
-•	Operational Risk: Tracking stock levels, especially for Critical Plants (21 identified plants), to mitigate shutdowns.
-•	Performance Disparity: Analyzing the wide performance gap between Critical and Subcritical plants through the Plant Load Factor (PLF).
-________________________________________
+🎯 Main Objectives
 
-📝 Key Dashboard Metrics & Observations
+Provide real-time insights on coal availability across India.
 
-I. Coal Stock Monitoring Dashboard 📦
+Compare requirement vs receipt and identify coal shortages.
 
-Metric Name	Value	💡 Insight
-Power Stations	190	Total units monitored.
-Total Requirement	980.45K	Demand (in Th Tonnes).
-Coal Shortage	166.34K	⚠️ Supply gap (Requirement minus Receipt).
-Average Stock Days	22.56	Acceptable average inventory duration.
-Critical Plants	21	High-risk plants requiring immediate attention.
-Subcritical Plants	189	Standard operation units.
-•	Stock Days by Sector:
-o	Joint Venture, Private, State, and Central Sectors all maintain a similar average stock days of $\approx 20-25$ days.
-•	Capacity by State:
-o	Uttar Pradesh (8.6M) and Maharashtra (8.0M) hold the highest total capacity, making them crucial states for stock stability.
+Analyse logistics performance (Rail, Road, Sea, Pithead, Others).
 
-II. Supply and Plant Performance Analysis Dashboard 🚂
+Study critical vs subcritical power plant performance.
 
-Metric Name	Value	Unit	📊 Data Point
-Rail	489.98K	Th Tonnes	Primary Transport Mode (Highest Volume).
-Sea	44.92K	Th Tonnes	Secondary coastal supply.
-Pithead	188.02K	Th Tonnes	Stock for close-proximity plants.
-Total Stock	14.96M	Th Tonnes	Overall coal inventory.
-Average PLF %	48.70%	%	Overall plant efficiency (needs improvement).
+Track state-wise & sector-wise generation capacity.
 
-•	Indigenous Stock Trend (Quarterly - Sum of Actual):
+Support strategic energy planning with visual insights.
 
-o	Q1: 2.9M
-o	Q2: 4.0M 🚀 (Highest receipt quarter)
-o	Q3: 3.5M
-o	Q4: 3.1M
-•	Plant Load Factor (PLF) by Critical vs. Subcritical:
-o	Subcritical Plants: Show more stability and consistently higher PLF throughout most of the year (e.g., Jan 62%, Feb 64%).
-o	Critical Plants: Exhibit dangerous volatility, including a sharp drop to -51% in March and very low figures in April, indicating major operational breakdowns or downtime.
-________________________________________
+🔗 2. Data Sources
+Source	Description
+India Data Portal	Coal Stock & Plant Load Factor dataset
+URL	https://indiadataportal.com/p/power/r/mop-coal_stock-pl-dl-aaa
 
-📊 Performance Summary
+Timeline	2018 – 2025
+Domain	Energy, Power Generation, Industrial Analytics
+❗ 3. Problem Statement
 
-⚙️ Key Findings
+India’s thermal power sector heavily depends on coal. To ensure uninterrupted power generation, it is essential to track:
 
-•	Logistics: 🚂 Rail dominates the coal supply chain, responsible for nearly 500K Th Tonnes, emphasizing its strategic role.
-•	Inventory Risk:
-o	A significant shortage of 166.34K Th Tonnes exists between requirement and receipt.
-o	21 plants are officially categorized as Critical (low stock).
-•	Operational Efficiency:
-o	The overall Average PLF is low at 48.70%.
-o	Critical Plants show erratic and extremely low performance in the fiscal year's beginning (April) and end (March), dragging down the national average.
-•	Geographic Focus: 📍 States like Uttar Pradesh and Maharashtra must be prioritized due to their massive power generation capacity (over 8M Th Tonnes each).
-________________________________________
+Coal requirement vs receipt
 
-📘 Conclusion
+Shortages across months/quarters
 
-The analysis confirms that the power sector faces dual challenges: persistent coal supply constraints (166.34K shortage) and severe operational instability in Critical plants. While Subcritical units show steady performance, the volatility of the 21 Critical plants significantly depresses the overall PLF.
-•	Action Required: Future strategy must focus on optimizing Rail logistics and urgent operational stabilization of the Critical plants to ensure the national power grid remains secure and efficient.
-________________________________________
+Imported vs indigenous coal contributions
 
+Logistics & transportation modes
 
-🚀 How to Use
-1.	Review the Coal Stock Monitoring dashboard for inventory health (shortages, stock days).
-2.	Review the Supply and Plant Performance Analysis for efficiency metrics (Average PLF and Critical/Subcritical PLF trends).
-________________________________________
+Plant Load Factor (PLF) efficiency
 
-👩‍💻 Author
+Sector-wise & state-wise capacity distribution
 
-[Rabi Barnrd M]
+This dashboard answers these questions with actionable visual analytics.
 
-[Data analyst]
+🧾 4. Attribute (Feature) Details
+Attribute	Data Type	Description
+Date	Date	Daily coal stock record
+Requirement	Numeric	Coal needed by plants
+Consumption	Numeric	Coal consumed
+Receipt	Numeric	Coal received
+Shortage	Numeric	Requirement – Receipt
+Sector	Categorical	Central, State, Private, JV
+State	Categorical	Indian states & UTs
+Imported Stock	Numeric	Monthly imported coal
+Indigenous Stock	Numeric	Quarterly domestic coal
+Transportation Mode	Categorical	Rail/Road/Sea/Pithead/Others
+PLF	Numeric (%)	Plant Load Factor
+Plant Type	Categorical	Critical / Subcritical
+🛠️ 5. Tools & Technologies Used
+Excel
 
-🌐 GitHub: [https://github.com/rabibarnard7-gif]
+Data cleaning
 
-💼 LinkedIn: []
+Normalization, format alignment
 
-📧mail: [rabibarnard6@gmail.com]
+Imputation for thermodynamic conditions
 
-📚 Tags
+Power BI
 
-#PowerSector #CoalSupply #PowerPlant #DataAnalysis #DashboardAnalysis #PLF #Energy
-________________________________________
+Data modelling (Star Schema)
 
+DAX calculations
 
+Interactive dashboards
+
+Drilldowns, slicers, bookmarks
+
+🔧 6. Data Pre-processing & Modelling
+🧹 Data Cleaning Tasks
+
+Removed duplicates, missing values
+
+Standardized date formats
+
+Cleaned plant-level irrelevant fields
+
+Segmented Critical vs Subcritical plants
+
+Prepared fact-dimension structure
+
+🗄️ Data Model (Star Schema)
+
+Fact Table: Indian Coal Stock
+
+Dimensions:
+
+Calendar
+
+Power Stations
+
+Sectors
+
+Stations by State
+
+📐 7. DAX Measures Created
+
+Key measures include:
+
+Total Requirement
+
+Total Receipt
+
+Coal Shortage
+
+Average Stock Days
+
+Imported %
+
+Total Capacity (State/Sector)
+
+Average PLF %
+
+Indigenous Stock
+
+Monthly Imported Stock
+
+📊 8. Dashboard Pages & Visualizations
+📍 Page 1: Coal Stock Monitoring
+⭐ Key KPIs
+
+🚩 Total Requirement: 980.45K Tonnes
+
+📦 Receipt: 814.12K Tonnes
+
+⚠️ Shortage: 166.34K Tonnes
+
+📆 Avg. Stock Days: 22.56
+
+🌍 Imported %: 0.10%
+
+🧮 Normative Gap: 6.39M
+
+📌 Visuals Used
+
+Quarterly Requirement vs Consumption vs Receipt
+
+Monthly Imported Stock Trend
+
+Sector-wise Capacity (Donut Chart)
+
+Average Stock Days by Sector
+
+State-wise Total Capacity (Bar Chart)
+
+Slicers (State, Date Range)
+
+📍 Page 2: Supply & Plant Performance
+⭐ Key KPIs
+
+🚆 Rail: 489.98K
+
+🚚 Road: 41.52K
+
+🚢 Sea: 44.92K
+
+⛏️ Pithead: 188.02K
+
+📦 Total Stock: 14.96M
+
+📌 Visuals Used
+
+Indigenous Stock by Quarter
+
+Critical vs Subcritical Plants (Donut Chart – 21 vs 169)
+
+Average PLF Gauge (%)
+
+Monthly PLF by Plant Type
+
+Plant Performance Map of India
+
+💡 9. Insights & Recommendations
+📌 Descriptive Insights
+
+Coal requirement is consistently higher than receipts → shortages persist.
+
+Indigenous stock decreasing quarter-over-quarter.
+
+Rail is the dominant transport mode.
+
+89% of India's plants are subcritical.
+
+📌 Diagnostic Insights
+
+Shortages mainly due to low indigenous output & reduced imports post-December.
+
+Central sector plants show lowest stock days → higher outage risk.
+
+📌 Predictive Insights
+
+Shortages likely to worsen in FY 2025–26 if indigenous supply keeps falling.
+
+States with high capacity but low PLF (UP, Maharashtra) may face pressure.
+
+📌 Prescriptive Insights
+
+Increase coal imports during high-demand seasons.
+
+Strengthen domestic coal logistics (especially for pithead stations).
+
+Accelerate modernization to shift away from subcritical tech.
+
+Improve stock days for central plants to maintain grid stability.
+
+🏁 10. Conclusion
+
+This project delivers an end-to-end Power BI solution for monitoring India’s coal ecosystem.
+It helps:
+
+Identify shortages
+
+Track indigenous vs imported coal trends
+
+Analyze PLF performance
+
+Support efficient planning for the power sector
+
+It demonstrates strong skills in Excel, Power Query, DAX, Data Modelling, and Interactive Power BI Reporting.
